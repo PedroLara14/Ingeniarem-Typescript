@@ -28,7 +28,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     }
 
 
-  return <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+  return <section id="contáctanos" className="mx-auto w-5/6 pt-24 pb-32">
     <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
         {/* HEADER */}
         <motion.div
@@ -43,11 +43,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         }}
         >
             <HText>
-                <span className="text-primary-500">JOIN NOW</span>
+                <span className="text-primary-500">CONTÁCTANOS</span>
             </HText>
-            <p className="my-5">
-            Become a Fitness Connection member today, <b>Join</b> online.
-            </p>
         </motion.div>
 
         {/* FORM AND IMAGE */}
@@ -72,7 +69,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                    <input
                         className={inputStyles}
                         type="text"
-                        placeholder="NAME"
+                        placeholder="NOMBRE"
                         {...register("name", {
                             required: true,
                             maxLength: 100,
@@ -80,8 +77,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                    />
                    {errors.name && (
                     <p className="mt-1 text-primary-500">
-                        {errors.name.type === "required" && 'This field is required.'}
-                        {errors.name.type === "maxLength" && 'Max Length is 100 Char.'}
+                        {errors.name.type === "required" && 'Este campo es de completado obligario.'}
+                        {errors.name.type === "maxLength" && 'Este campo es de maximo 100 caracteres.'}
                     </p>
                    )}
 
@@ -96,14 +93,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                    />
                    {errors.email && (
                     <p className="mt-1 text-primary-500">
-                        {errors.email.type === "required" && 'This field is required.'}
-                        {errors.email.type === "pattern" && 'Invalid email address.'}
+                        {errors.email.type === "required" && 'Este campo es de completado obligario.'}
+                        {errors.email.type === "pattern" && 'Direccion de correo electronico invalida'}
                     </p>
                    )}
 
                     <textarea
                         className={inputStyles}
-                        placeholder="MESSAGE"
+                        placeholder="MENSAJE"
                         rows={4}
                         cols={50}
                         {...register("message", {
@@ -113,8 +110,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                    />
                    {errors.message && (
                     <p className="mt-1 text-primary-500">
-                        {errors.message.type === "required" && 'This field is required.'}
-                        {errors.message.type === "maxLength" && 'Max Length is 2000 Char.'}
+                        {errors.message.type === "required" && 'Este campo es de completado obligario.'}
+                        {errors.message.type === "maxLength" && 'Este campo es de maximo 2000 caracteres.'}
                     </p>
                    )}
 
@@ -122,7 +119,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                    type="submit"
                    className="mt-5 rounded-lg bg-secundary-500 px-20 py-3 transition duration-500 hover:text-white"
                    >
-                    SUBMIT
+                    ENVIAR
                    </button>
                 </form>
             </motion.div>
@@ -140,7 +137,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             >
                 <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before-right-10 before:z-[-1]">
                     <img  
-                        className="w-full"
+                        className="w-full rounded-lg"
                         alt="contact-us-page-graphic"
                         src={ContactUsPageGraphic}
                     />
