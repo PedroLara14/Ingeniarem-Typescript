@@ -10,6 +10,15 @@ import image8 from "@/assets/image8.png";
 import image9 from "@/assets/image9.png";
 import image10 from "@/assets/image10.png";
 import image11 from "@/assets/image11.png";
+import image12 from "@/assets/image12.png";
+import image13 from "@/assets/image13.png";
+import image14 from "@/assets/image14.png";
+import image15 from "@/assets/image15.png";
+import image16 from "@/assets/image16.png";
+import image17 from "@/assets/image17.png";
+import image18 from "@/assets/image18.png";
+import image19 from "@/assets/image19.png";
+import image20 from "@/assets/image20.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
@@ -47,6 +56,33 @@ const classes: Array<ClassType> = [
   },
   {
     image: image11,
+  },
+  {
+    image: image12,
+  },
+  {
+    image: image13,
+  },
+  {
+    image: image14,
+  },
+  {
+    image: image15,
+  },
+  {
+    image: image16,
+  },
+  {
+    image: image17,
+  },
+  {
+    image: image18,
+  },
+  {
+    image: image19,
+  },
+  {
+    image: image20,
   },
 ];
 

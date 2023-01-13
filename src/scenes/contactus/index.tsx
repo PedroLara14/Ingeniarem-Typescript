@@ -88,7 +88,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         placeholder="NUMERO DE TELEFONO"
                         {...register("phonenumber", {
                             required: true,
-                            maxLength: 12,
+                            maxLength: 10,
                         })}
                    />
                    {errors.phonenumber && (
