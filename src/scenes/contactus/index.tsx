@@ -105,13 +105,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         cols={50}
                         {...register("message", {
                             required: true,
-                            maxLength: 2000,
+                            maxLength: 4000,
                         })}
                    />
                    {errors.message && (
                     <p className="mt-1 text-primary-500">
                         {errors.message.type === "required" && 'Este campo es de completado obligario.'}
-                        {errors.message.type === "maxLength" && 'Este campo es de maximo 2000 caracteres.'}
+                        {errors.message.type === "maxLength" && 'Este campo es de maximo 4000 caracteres.'}
                     </p>
                    )}
 
