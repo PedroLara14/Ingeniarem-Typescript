@@ -84,6 +84,22 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
                     <input
                         className={inputStyles}
+                        type="number"
+                        placeholder="NUMERO DE TELEFONO"
+                        {...register("phonenumber", {
+                            required: true,
+                            maxLength: 12,
+                        })}
+                   />
+                   {errors.phonenumber && (
+                    <p className="mt-1 text-primary-500">
+                        {errors.phonenumber.type === "required" && 'Este campo es de completado obligario.'}
+                        {errors.phonenumber.type === "maxLength" && 'El numero de telefono debe ser de maximo 12 numeros'}
+                    </p>
+                   )}
+
+                    <input
+                        className={inputStyles}
                         type="text"
                         placeholder="EMAIL"
                         {...register("email", {
