@@ -109,8 +109,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
         >
           <div className="md:w-3/5">
             <HText>PROYECTOS</HText>
-            <p className="py-5">
-            INGENIAREM trabaja buscando que los proyectos constructivos se realicen cumpliendo los estándares de calidad, diseño y especificaciones técnicas planteadas y requeridas por nuestros clientes. Estamos conscientes de que el éxito de toda construcción radica en una buena integración y trabajo en equipo entre diseñador, constructor, interventoría y cliente final.
+            <p className="py-5 text-lg">
+            <b>INGENIAREM trabaja buscando que los proyectos constructivos se realicen cumpliendo los estándares de calidad, diseño y especificaciones técnicas planteadas y requeridas por nuestros clientes. Estamos conscientes de que el éxito de toda construcción radica en una buena integración y trabajo en equipo entre diseñador, constructor, interventoría y cliente final.</b>
             </p>
           </div>
         </motion.div>

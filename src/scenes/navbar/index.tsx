@@ -53,13 +53,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage}: Props) => {
                             setSelectedPage={setSelectedPage} 
                             />
                         </div>
-                        <div className={`${flexBetween} gap-8 text-black`}>
+                        <div className={`${flexBetween} gap-8 text-white`}>
                             <ActionButton setSelectedPage={setSelectedPage}>Solicita una cotización</ActionButton>
                         </div>
                     </div>
                 )  : ( 
                     <button
-                        className="rounded-full bg-secundary-500 p-2"
+                        className="rounded-full bg-primary-400 p-2"
                         onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                         <Bars3Icon className="h-6 w-6 text-white" />

@@ -55,8 +55,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
         }}
         >
             <HText>INGENIERÍA, ACABADOS Y REMODELACIONES</HText>
-            <p className="my-5 text-sm">
-            Empresa Contructora que ofrece todo tipo de servicios referente a la Ingeniería Civil. Cubre la selección de contratistas, preparación de documentos, programación, contratación de obras, ingeniería de campo, supervisión e inspección de los trabajos y gestión de apoyo logístico.
+            <p className="my-5 text-lg">
+            <b>Empresa Contructora que ofrece todo tipo de servicios referente a la Ingeniería Civil. Cubre la selección de contratistas, preparación de documentos, programación, contratación de obras, ingeniería de campo, supervisión e inspección de los trabajos y gestión de apoyo logístico.</b>
             </p>
         </motion.div>
 
