@@ -4,7 +4,7 @@ import InstagramIcon from "@/assets/InstagramIcon.png";
 
 const Footer = () => {
   return (
-  <footer className="bg-primary-600 py-16">
+  <footer className="bg-primary-500 text-cyan-800 py-16">
     <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
             <h4 className="font-bold text-xl">ACERCA DE NOSOTROS</h4>
